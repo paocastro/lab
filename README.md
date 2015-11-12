@@ -62,7 +62,7 @@ app.controller('plan_control',
     function($scope,$http){
         
     }
-};
+);
 ````
 
 * Dentro de la función del controlador, 
