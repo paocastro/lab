@@ -27,7 +27,7 @@ git remote -v
 `````bash
 git remote set-url origin <url-repositorio>
 `````
-donde `<url-repositorio>` es el nombre del repositorio creado en su cuenta
+donde `<url-repositorio>` es la url del repositorio creado en su cuenta
 
 * Verifique que el repositorio fue modificado.
 
@@ -73,7 +73,7 @@ y agregue una variable en la que se almacene el nombre del plano seleccionado.
 * En  la  página  html agregue un  formulario  con  un  elemento  de  tipo `<select>`,
 en  el  cual  se  mostrará  el  listado  de  planos  disponibles,
 y  se podrá  seleccionar  uno. 
-Haga  que  dicho  formulario  esté  asociado  al controlador  definido  anteriormente
+Asocie al cuerpo de la página html el controlador  definido  anteriormente
 mediante  la  directiva  `ng-controller`,  y que el elemento `<select>` quede 
 asociado a la variable del controlador en la que se almacenará 
 el nombre del plano seleccioando. Adicionalmente, las opciones  de  este 
