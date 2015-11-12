@@ -12,8 +12,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body >
-	Primera expresión {{23+17}}
-                       
-        
+        <div ng-controller="plan_control">
+        <form>
+           
+            <select ng-model="nombrePlano">
+                <option  ng-repeat="o in nombres" value="{{o}}">
+                {{o}}
+                </option>
+            </select>
+             <button type="button" class="btn btn-warning"  ng-click="loadData()">
+                Load
+              </button>
+            <p>You wrote: {{ http }}</p>
+             <button type="button" class="btn btn-warning"  ng-click="cargarCanvas()">
+                dibujar
+              </button>
+            <br/>
+            <canvas id="myCanvas" width="800" height="600" style="border:1px solid #000000;">
+            </canvas> 
+        </form>               
+        </div>
     </body>
 </html>
